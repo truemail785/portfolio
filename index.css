@@ -1,0 +1,158 @@
+body{
+	font-family: sans-serif;
+	background-color: fuchsia;
+}
+
+main{
+	background-color: fuchsia;
+}
+
+h1{
+	font-family: 'Oswald', sans-serif;
+}
+
+p{
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+
+a{
+	font-family: 'Courier Prime', monospace;
+}
+h3{
+	font-family: 'Girassol', cursive;
+}
+nav{
+	font-size: 25px;
+	background-color: orange;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+
+nav a{
+	width: 20%;
+	color: white;
+	text-decoration: none;
+}
+
+#welcome-section{
+	height: 100vh;
+	background-color: #242e27;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+
+
+}
+
+#welcome-section-title{
+	padding: 20%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+p{
+	font-size: 2rem;
+}
+
+#projects{
+	background-color: brown;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#projects-section{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#projects-section a{
+	margin-top: 3rem;
+	width: 40%;
+	border-radius: 5px;
+	background-color: #808080;
+	color: white;
+	text-decoration: none;
+}
+
+
+
+.img-div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#projects-section a:hover{
+	background-color: cyan;
+}
+
+img{
+	border-radius: 3px;
+	width: 100%;
+	height: 300px;
+}
+
+#contact{
+	color: white;
+	height: 100vh;
+	display: grid;
+	grid-auto-rows: 1fr 1fr;
+}
+
+#contact-title{
+	color: white;
+	text-align: center;
+	margin-top: 6rem;
+}
+
+#contact a{
+	font-size: 2rem;
+	color: lightgray;
+	text-decoration: none;
+}
+
+
+
+#social-media{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	text-align: center;
+
+}
+
+
+@media(max-width: 775px){
+	nav{
+		justify-content: space-around;
+	}
+
+	#projects h1{
+		width: 80%;
+	}	
+
+	#projects-section{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#projects-section a{
+		width: 75%;
+	}
+
+	#social-media{
+		grid-template-columns: repeat(2, 1fr);
+		align-content: center;
+	}
+}
